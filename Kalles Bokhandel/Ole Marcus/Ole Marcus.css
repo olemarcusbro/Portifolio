@@ -1,0 +1,269 @@
+/* Plasering av content banner teskt og Størrelsen på hele nettsiden  */
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* plasering av Logoen og Om oss  Log in  */
+.Homeknapp{
+width: 1170px;
+margin: 0 auto;
+padding: 14px 16px;
+}
+
+/* Hele headeren og fargene  */
+header{
+height:  6.25rem;
+background-color:#d1b08f;
+width: 100%;
+z-index: 12;
+position: fixed;
+border-top: 7px solid #3b3b3b;
+top: 0;
+}
+
+/* Kalles Bokandel logoen plasering,*/
+.logo{
+width: 30;
+float: left;
+line-height: 6.25rem;
+text-decoration: none;
+font-size: 1.875rem;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+letter-spacing: 0.313rem;
+}
+
+/* Plassering av Om oss og log inn*/
+nav{
+float: right;
+line-height: 6.25rem;
+}
+
+/* Om Oss Log in tekst størelse og font  */
+nav a{
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 0.25rem;
+font-size: 1.25rem;
+margin: 0 0.6rem;
+color: rgb(0, 0, 0);
+}
+
+/* Banner bildet */
+.banner-area{
+  width: 100%;
+  height: 31.25rem;
+  position: fixed;
+  top: 0.625rem;
+  background-image: url("Forside.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* Banner skrift */
+.banner-area h2{
+  padding: 13%;
+  font-size: 4.375rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 13px #000000;
+}
+
+/* Hele Content tingen */
+.content-area{
+  width: 100%;
+  position: relative;
+  top: 28.125rem;
+  background: #fff;
+  height: 93.75rem;
+  padding-bottom: 450px;
+}
+
+/* Content Area */
+.content-area h2{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.25rem;
+  padding-top: 1.875rem;
+  font-size: 2.5rem;
+  margin: 0;
+
+  /* Slik at teksten holder seg oppe */
+}
+.content-area p{
+  padding: 2%;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.875rem;
+}
+
+/* Dette er hele footeren blir denne fjernet vil ingenting fungere den styrer også line høyde og skrift type */
+footer{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Denne gjør slik at teksten inni footeren holder seg sentralt og i midten og at det er mindre lengde på de forskjellige skriftene */
+.container{
+max-width: 73.125rem;
+margin:auto;
+}
+
+/* Denne gjør sånn at teksten holder seg vannrett og ikke går loddrett nedover fjerner du denne detter teksten i footeren ned og blir loddrett */
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+/* Denne coden fjerner dottene som du får når du skriver ul i HTML */
+ul{
+list-style: none;
+}
+
+/*Denne coden forandrer fargen på footer backgrunden*/
+.footer{
+background-color:#b08b67;
+padding: 5rem 0;
+position: relative;
+border-bottom: 1.563rem solid #2d2f35;
+margin-top: 450px;
+bottom: 0;
+}
+
+/* Denne coden midtstiller både teksten og logoene  i footeren slik at de ikke på venstre side */
+.footer-col{
+width: 25%;
+padding: 15 2.188rem;
+}
+
+/* Fargen på teksten i footeren teksten (Bokhandler,Utvikler Team, følg oss) */
+.footer-col h4{
+font-size: 1.25rem;
+color: #ffffff;
+text-transform: capitalize;
+margin-bottom: 2.188rem;
+font-weight: 500;
+position: relative;
+text-align: center;
+}
+
+/* Denne koden her er for og forandre på linjen under teksten i footeren den som er blå og er under (Bilder,rektor og ledelsen,kilder, følg oss)  */
+.footer-col h4::before{
+content: '';
+position: absolute;
+left:1;
+bottom: -0.625rem;
+background-color: #8B4513;
+height: 0.125rem;
+box-sizing: border-box;
+width: 3.125rem;
+}
+
+/* Avstanden mellom alle under den store teksten i footer */
+.footer-col ul li:not(:last-child){
+margin-bottom: 0.625rem;
+}
+
+
+/* Teskten under Company Get help */
+.footer-col ul li a{
+font-size: 1rem;
+text-transform: capitalize;
+color: #ffffff;
+text-decoration: none;
+font-weight: 300;
+color: #ffffff;
+display: block;
+transition: all 0.3s ease;
+margin-right: 3.125rem;
+}
+
+
+/* Fargen når du hover over de forskjellige tingene i footeren */
+.footer-col ul li a:hover{
+color: #70360e;
+padding-left: 0.5rem;
+}
+
+
+/* Rundinger og formen til Sosial lenkene */
+.footer-col .social-links a{
+display: inline-block;
+height:  2.5rem;
+width:  2.5rem;
+background-color: #70360e;
+margin:0 0.625rem 0.625rem 0;
+text-align: center;
+line-height: 2.5rem;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+}
+
+
+/* Denne gjør at faregene bytter når man hover over sosial */
+.footer-col .social-links a:hover{
+/* fargen til logoen i de sirklene */
+color: #422d19;
+/* Fargen til sirkelen når du hover */
+background-color: #af856a;
+}
+
+
+/* Form og skygge til bildene av bøkene */
+.skygge{
+box-shadow: 20px 20px 50px 10px  black;
+border-radius: 20px 20px 20px 20px;
+}
+
+.image {
+  opacity: 2;
+  position: center;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Gråingen til bildet */
+.container:hover .image {
+  opacity: 0.5;
+}
+
+/* Knappen */
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+*row2{
+  box-sizing: border-box;
+}
+
+.column{
+  float: left;
+  width: 13.33%;
+  padding: 170px;
+}
+
+.row2::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ 

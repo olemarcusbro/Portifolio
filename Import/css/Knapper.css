@@ -1,0 +1,76 @@
+
+.cta,
+
+/* Header Knapp Kode */
+.cta {
+  padding: 9px 25px;
+  background: linear-gradient(120deg,#009999, #00cc99);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: var(--text-color);  /* Bytter på farge inne i teksten i knappen*/
+  transition: background-color 0.3s ease 0s;
+}
+
+/* Header Knapp hover */
+.cta:hover {
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 50px 0px var(--main-color);
+}
+
+/* Knapper i Portifolioen */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+/* Knapper i nettsiden hover */
+.btn:hover {
+    box-shadow: none;
+}
+
+/* Knapper i bildene */
+.ntn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--text-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--text-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+/* Knapper i bildene hover */
+.ntn:hover {
+  box-shadow: none;
+}
+
+/* Kontakt Knappen nederst */
+.otn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--second-bg-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+/* Knapper i nettsiden hover */
+.otn:hover {
+  box-shadow: none;
+}

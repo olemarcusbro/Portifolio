@@ -1,0 +1,290 @@
+ul  {
+    background: #ff9d00; /*bakkgrunndsfarge*/
+    color: darkblue; /*tekstfarge*/
+    margin: 10px; /*Marg*/
+}
+   
+    
+  
+  
+    img  {
+        border: 1px solid #ddd; /*kant*/
+        border-radius: 4px; /*grense for kanten*/
+        padding: 5px; /*gjørs sånn at det mellomrom mellom bildet og kanten*/
+        width: 150px; /*bredde*/
+        margin-right: 100px; /*hvor langt til høyre det skal gå*/
+        float: right; /*at bildet skal være på høyre side*/
+
+
+
+}
+ul  {
+  background: #ff9d00;
+  color: darkblue;
+  margin: 5px; /*css til liste*/
+}
+
+  img  {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      margin-right: 50px;
+width: 350px; /*css til Bildet*/
+  } 
+
+  .example {
+    position: relative;
+    padding: 0;
+    width: 300px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden; /*css til div*/
+  }
+  
+  .content {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 100;
+    color: #ffb006;
+    background-color: rgba(200, 200, 200, 0.5);
+    width: 300px;
+    height: 300px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+  } /*css som kommer fram når man er på bildet*/
+  
+  .example .content:hover {
+    opacity: 1; /*gjennomsiktigeheten når man er over bildet*/
+  } 
+  
+  .example .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s; /*css til teksten på bildet*/
+  }
+  
+  .example .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px); /*når man er over bildet*/
+  }
+  .example {
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;/*Tekst til faden*/
+  }
+  .example .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 360px;
+    height: 100px;
+    padding: 130px 20px; /*boksen til faden*/
+  }
+  .example:hover .fadedbox {
+    opacity: 0.8; /*Fade*/
+  }
+  .example .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px); /*Teksten på bildet*/
+  }
+  .example .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+  }
+  .example:hover .title,
+  .example:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px); /*begge er musepeker*/
+  }
+ 
+  
+  body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.Homeknapp{
+ width: 1170px;
+ margin: 0 auto;
+ padding: 14px 16px;
+}
+
+
+header{
+height:  6.25rem;
+background-color:#d1b08f;
+width: 100%;
+z-index: 12;
+position: fixed;
+border-top: 7px solid #3b3b3b
+}
+
+
+.logo{
+ width: 30;
+ float: left;
+ line-height: 6.25rem;
+text-decoration: none;
+font-size: 1.875rem;
+font-family: 'Poppins', sans-serif;
+color: #fff;
+letter-spacing: 0.313rem;
+}
+
+
+nav{
+float: right;
+line-height: 6.25rem;
+}
+
+
+nav a{
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 0.25rem;
+font-size: 1.25rem;
+margin: 0 0.6rem;
+color: rgb(0, 0, 0);
+}
+
+
+
+footer{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+
+    .container{
+    max-width: 73.125rem;
+    margin:auto;
+    }
+    
+  
+    .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+  
+    ul{
+    list-style: none;
+    }
+    
+
+    .footer{
+    background-color:#b08b67;
+    padding: 5rem 0;
+    position: relative;
+    border-bottom: 1.563rem solid #2d2f35;
+    margin-top: 450px;
+    }
+    
+  
+    .footer-col{
+    width: 25%;
+    padding: 15 2.188rem;
+    }
+    
+ 
+    .footer-col h4{
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 2.188rem;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    }
+    
+ 
+    .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:1;
+    bottom: -0.625rem;
+    background-color: #8B4513;
+    height: 0.125rem;
+    box-sizing: border-box;
+    width: 3.125rem;
+    }
+    
+ 
+    .footer-col ul li:not(:last-child){
+    margin-bottom: 0.625rem;
+    }
+    
+    
+    
+    .footer-col ul li a{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    display: block;
+    transition: all 0.3s ease;
+    margin-right: 3.125rem;
+    }
+    
+    
+   
+    .footer-col ul li a:hover{
+    color: #70360e;
+    padding-left: 0.5rem;
+    }
+    
+    
+
+    .footer-col .social-links a{
+    display: inline-block;
+    height:  2.5rem;
+    width:  2.5rem;
+    background-color: #70360e;
+    margin:0 0.625rem 0.625rem 0;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    }
+    
+    
+    .footer-col .social-links a:hover{
+    color: #422d19;
+    background-color: #af856a;
+    }
+  
+

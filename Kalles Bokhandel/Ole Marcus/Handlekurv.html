@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="Handlekruv.css" />
+<link rel="icon" type="image/x-icon" href="/Kalles Bokhandel/Ole Marcus/Bilder Ole Marcus/BK 2.png">
+<title>Handlekruv</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>Bestillings Ordre</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Fult Navn</label>
+          <input type="text" placeholder="Skriv inn Fult Navn" required />
+        </div>
+
+        <div class="input-box">
+          <label>E-post Adresse</label>
+          <input type="text" placeholder="Skriv inn E-post Adressen" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Telefonnummer</label>
+            <input type="number" placeholder="Skriv inn Telefonnummer" required />
+          </div>
+
+          <div class="input-box">
+            <label>Fødselsdato</label>
+            <input type="date" placeholder="Skriv inn Fødselsdatoen" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Kjønn</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-Mann" name="gender" checked />
+              <label for="check-Kinne">Mann</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-Kvinne" name="gender" />
+              <label for="check-Kvinne">Kvinne</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Annet</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label>Addresse</label>
+          <input type="text" placeholder="Skriv inn Adresse" required />
+          <input type="text" placeholder="Skriv inn Adresse linje 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Land</option>
+                <option>Norge</option>
+                <option>Sverige</option>
+                <option>Danmark</option>
+                <option>Europa</option>
+              </select>
+            </div>
+
+            <input type="text" placeholder="By" required />
+          </div>
+
+          <div class="column">
+            <input type="text" placeholder="Fylke" required />
+            <input type="number" placeholder="Postkode" required />
+          </div>
+          
+        </div>
+        <button>Bestill</button>
+      </form>
+    </section>
+  </body>
+</html>

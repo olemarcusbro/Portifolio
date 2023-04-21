@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <!-- Lenken er for at mine logoer fungerer altså twitter, facebook og instagram/ linkindin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- lenke til bilde av iconet mitt -->
+    <link rel="icon" type="image/x-icon" href="Icon logo.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hønefoss Videregående Skole Kantine</title>
+    
+</head>
+
+<!-- Stylen er for og replace css file -->
+<Style>
+    
+    /* Plasering av content banner teskt og Størrelsen på hele nettsiden  */
+    body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+    
+    /* plasering av Logoen og 1IMA 2ITA INFO KANTINE */
+    .Homeknapp{
+     width: 73.125rem;
+     margin: 0 auto;
+     padding: 0.875 1rem;
+    }
+    
+    /* Hele den sorte header */
+    header{
+    height:  6.25rem;
+    background-color: #24262b;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-top: 0.438rem solid #2d2f35;
+    }
+   
+    /* Hønefoss logoen plasering, kan slå sammen med log.a  */
+    .logo{
+     width: 30;
+     float: left;
+     line-height: 6.25rem;
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 0.313rem;
+    }
+
+    /* Plassering av 1IMA 2ITA INFO og Kantine  */
+    nav{
+    float: right;
+    line-height: 6.25rem;
+    }
+    
+    /* 1ima 2ITA Info Kantine tekst størelse og font  */
+    nav a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 1.25rem;
+    margin: 0 0.6rem;
+    color: #fff;
+    }
+
+    /* Firkant bildet av klasserommet */
+    .firkant{
+    height: 31.25rem;
+    width: 100%;
+    top: 0.625rem;
+    display: flex;
+    justify-content: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    }
+   
+    /* Borderen rundt bildet */
+    .firkant img{
+    height: 30rem;
+    width: 50%;
+    border-radius: 20%;
+    border:0.25rem solid rgb(0, 0, 0)    
+    }
+
+
+    /* Hele Content tingen */
+    .content-area{
+    width: 100%;
+    top: 28.125rem;
+    background: rgb(255, 255, 255);
+    height: 93.75rem;
+    }
+    
+    /* Content Area */
+    .content-area h2{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.25rem;
+    padding-top: 1.875rem;
+    font-size: 2.5rem;
+    margin: 0;
+    }
+    .content-area p{
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.875rem;
+    }
+
+
+    /* Den boksen som er rundt teksten */
+    .box {
+    color: rgb(1, 1, 1);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 1px;
+    padding-bottom: 350px;
+    width: 80%;
+    height: 1px;
+    float: center;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+ }
+
+     /* Den boksen som er rundt bilde */
+     .box2 {
+    color: rgb(1, 1, 1);
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 5px;
+    padding-bottom: 460px;
+    width: 50%;
+    height: 1px;
+    float: center;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    position: relative; right: 350px;
+ }
+
+   /* Den boksen som er over bildet av klassen */
+   .box3 {
+    color: rgb(1, 1, 1);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 1px;
+    padding-bottom: 120px;
+    width: 40%;
+    height: 1px;
+    float: center;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+ }
+
+ /* Denne er for stilen til boksen som holder bestillingen i, fjerner du denne vil det ikke være en boks der */
+    .box4 {
+    color: rgb(1, 1, 1);
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    background: #ffffff;
+    padding: 1px;
+    padding-bottom: 270px;
+    width: 80%;
+    height: 1px;
+    float: center;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+ }
+
+ /* Denne her styrer utsendet til matvarene i uke 50 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Denne styrer hvor stor strek det skal være i matvare uke 50 */
+tr {
+  border-bottom: 1px solid #24262b;
+}
+
+    /* Tekst font */
+    .tekstype{
+        font-family: 'Poppins', sans-serif;
+    
+    }
+
+    /* Tekst til Venstre */
+    .venstre{
+        text-align: Left;
+    }
+    
+    /* Runde bildet av Bjørn */
+    .runding{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: left ;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* Borderen av bilde til Bjørn */
+    .runding img{
+        height: 12.5rem;
+        width: 12.5rem;
+        border-radius: 50%;
+        border:0.375rem solid rgb(0, 0, 0)
+    }
+
+/* Dette er hele footeren blir denne fjernet vil ingenting fungere den styrer også line høyde og skrift type */
+footer{
+line-height: 1.5;
+font-family: 'Poppins', sans-serif;
+}
+
+/* Denne gjør slik at teksten inni footeren holder seg sentralt og i midten og at det er mindre lengde på de forskjellige skriftene */
+.container{
+	max-width: 73.125rem;
+	margin:auto;
+}
+
+/* Denne gjør sånn at teksten holder seg vannrett og ikke går loddrett nedover fjerner du denne detter teksten i footeren ned og blir loddrett */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Denne coden fjerner dottene som du får når du skriver ul i HTML */
+ul{
+list-style: none;
+}
+
+/*Denne coden forandrer fargen på footer backgrunden*/
+.footer{
+	background-color: #24262b;
+    padding: 5rem 0;
+    position: relative;
+    border-bottom: 1.563rem solid #2d2f35;
+}
+
+/* Denne coden midtstiller både teksten og logoene  i footeren slik at de ikke på venstre side */
+.footer-col{
+   width: 25%;
+   padding: 15 2.188rem;
+}
+
+/* Denne coden forandre alt som står i H4, den kan forandre fargene tekst størrelse og posisonen til teksten om den er i midten høyre eller venstre */
+.footer-col h4{
+	font-size: 1.25rem;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 2.188rem;
+	font-weight: 500;
+	position: relative;
+    text-align: center;
+}
+
+/* Denne gjør det samme som den oppe bare at denne forandre på den blå streken under teksten og har ingenting med teksten og gjøre */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:1;
+	bottom: -0.625rem;
+	background-color: #0000ff;
+	height: 0.125rem;
+	box-sizing: border-box;
+	width: 3.125rem;
+}
+
+/* Avstanden mellom alle under den store teksten i footer */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 0.625rem;
+}
+
+/* Teskten under Company Get help */
+.footer-col ul li a{
+	font-size: 1rem;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    margin-right: 3.125rem;
+}
+
+/* Fargen når du hover over de forskjellige tingene i footeren */
+.footer-col ul li a:hover{
+	color: #3939f9a3;
+	padding-left: 0.5rem;
+}
+
+/* Rundinger og formen til Sosial lenkene */
+.footer-col .social-links a{
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 0.625rem 0.625rem 0;
+	text-align: center;
+	line-height: 2.5rem;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+/* Denne gjør at faregene bytter når man hover over sosial */
+.footer-col .social-links a:hover{
+	/* fargen til logoen i de sirklene */
+    color: #000000;
+    /* Fargen til sirkelen når du hover */
+	background-color: #0000ff;
+}
+
+</Style>
+
+<!-- body er for hele siden alt som ligger inni body vises på nettsiden -->
+<body>
+
+ <!-- header er for headeren min, jeg lagde denne slik at coden ser mere oversiktlig ut -->
+<header>
+
+<!-- DIV=divisjon denne styrer hva som skjer inni diven så derfor linker jeg css koden til en div så vil den forandre diven som blir lenket til -->
+    <DIV class="Homeknapp">
+    <div class="logo">
+        <a href="Index.html"><img src="hnefoss-videregaende-skole-mork.svg" alt="" width="200vh"></a>
+    </div>
+
+    <!-- nav er den som styrer at man kan trykke på 1IMA 2ITA OG KANTINE siden de er lenket til en annen nettside -->
+        <nav>
+        <a href="1IMA.HTML">1IMA</a>
+        <a href="2ITA.HTML">2ITA</a>            
+        <a href="KANTINA.HTML">Kantine</a>
+        </nav>
+    </DIV>
+</header>
+        
+<!-- Denne er for og holde oversikt over alt som ligger i main/content -->
+<Main>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    </div>
+    <div class="content-area">
+        <h2>Kantine</h2>
+                    <br>
+    <div class="firkant">
+        <img src="Kantine2.jpg" alt="">
+    </div>
+    <div class="box">
+        <h2 style="font-family: 'Poppins', sans-serif;">Info</h2>
+        <p style="font-family: 'Poppins', sans-serif;"><b>Kantine</b> ble bygget opp da skolen kom altså i 2015, kantinen severer
+                            altid god mat for en rimelig penge. Elevene kan bruke kantinen når som helst, til og spise være sosiale eller jobbe med oppgaver.
+            <br>
+            <br>
+I kantinen jobber det to fantastiske personer som heter Dorthe og Marja, de har ansvare for maten i kantinen.
+Skole elevene får også tilbudt gratis havregrøt på starten av skole dagen slik at de får i seg energi før timen starter.
+De er også variert mat slik at det ikke bare er det samme vær uke.<b>Kantinen på Hønefoss videregående Skole er best!</b></p>
+    </div>
+    </div>
+    <div class="td">
+        <table>
+            <tr>
+            <th>Time</th>
+            <th>Mandag</th>
+            <th>Tirsdag</th>
+            <th>Onsdag</th>
+            <th>Torsadg</th>
+            <th>Fredag</th>
+            </tr>
+            <tr>
+            <td>Uke 50</td>
+            <td>Salatbar 40kr</td>
+            <td>Salatbar 40kr</td>
+            <td>Kyllingsuppe 45kr</td>
+            <td>Pizza 20kr stk</td>
+            <td>Tomatsuppe 30kr</td>
+            </tr>
+        </table>
+            <br>
+    </div>
+    <div class="box4">
+            <h1 style="font-family: 'Poppins', sans-serif;">Mat Register</h1>
+            <form action="Brusogmatregister.html">
+            <input type="text" name="navn" placeholder="Hva heter du?" required><br>
+            <label>Hva ønsker du å drikke til maten?</label><br>
+            <input type="radio" value="brus" name="rbDrikke"><span>Brus</span>
+            <input type="radio" value="saft" name="rbDrikke"><span>Engeridrikk</span>
+            <input type="radio" value="vann" name="rbDrikke"><span>Sjokomelk</span><br>
+            <select name="velgMat">
+            <option value="">Hva ønsker du å spise?</option>
+            <option value="Salatbar">Salatbar</option>
+            <option value="Kyllingsuppe">Kyllingsuppe</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Tomatsuppe">Tomatsuppe</option>
+    </select>
+    </form>
+    
+    <H1 style="font-family: 'Poppins', sans-serif;">Varmlunsjmeny i kantina vår uke 50</H1>
+    <form action="Brustregister.html">
+    <label for="" style="font-family: 'Poppins', sans-serif;">Mat</label>
+    <input type="text" name="Mat" placeholder="Salatbar m/noe varmt" required>
+    <label for="" style="font-family: 'Poppins', sans-serif;">Drikke</label>
+    <input type="text" name="Drikke" placeholder="Sjokomelk" required>
+    <label for="" style="font-family: 'Poppins', sans-serif;">Pris</label>
+    <input type="text" name="Pris" placeholder="40kr" required>
+    <label for="" style="font-family: 'Poppins', sans-serif;">Betalingsmåte</label>
+    <input type="text" name="Betalingsmåte" placeholder="Kort eller Kontant" required>
+<button type="submit" style="font-family: 'Poppins', sans-serif;">Trykk her</button>
+    </form>
+    </div>
+                            
+    </div>
+    <div class="box3">
+        <h2 style="font-family: 'Poppins', sans-serif;">Her er kassen til Kantinen</h2>
+    </div>
+            <br>
+    <div class="firkant">
+        <img src="Kantine3.jpg" alt="">
+    </div>
+                            
+    <div class="box2">
+        <h1 style="font-family: 'Poppins', sans-serif;">Kantinepernsonell | Dorthe og Marja</h1>
+                                
+    <div class="runding">
+        <img src="Kantine Personelle.jpg" class="runding">  
+    </div> 
+        <h3 style="font-family: 'Poppins', sans-serif;">Kontakt Informasjon</h3>
+    <div class="epost">
+        <ul>
+            <li style="font-family: 'Poppins', sans-serif;"><a href="mailto:honefossvgs@viken">E-post</a></li>
+            <li style="font-family: 'Poppins', sans-serif;"> Tlf: 31 00 27 00</li>
+        </ul>
+    </div>
+</Main>
+    </div>
+            <br>
+            <br>
+<footer class="footer">
+    <div class="container">
+    <div class="row">
+    <div class="footer-col">
+        
+        <h4>Bilder</h4>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=goF5dV-X1-U">Video</a></li>
+            <li><a href="https://www.youtube.com/channel/UCofJxfBGd_EC9cDYQeDxV1g">Youtube kanal</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYoLiWQwNZewN2NCGGe4_NgZe9FrNUGF5UA&usqp=CAU">Resturant og Matfag bilde</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Kantina</h4>
+        <ul>
+            <li><a href="https://utdanning.no/utdanning/vgs/imikm1----">Utdanning</a></li>
+            <li><a href="https://viken.no/honefoss-vgs/for-elever/skolehverdagen/kantine/">Kantinen på Hønefoss vgs</a></li>
+            <li><a href="https://www.vilbli.no/nb/nb/oslo/restaurant-og-matfag/program/v.rm?">vilbli.no</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Laget av Ole Marcus</h4>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UChdiNGai83EMhSIv9JdwYgw">Youtube</a></li>   
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h4>Følg oss</h4>
+    <div class="social-links">
+            <a href="https://www.facebook.com/honefossvgs"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/OleMarcus2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ole_brovold/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ole-marcus-brovold-abb810259/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+</footer>
+    </div>
+</body>
+</html>
+                    
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

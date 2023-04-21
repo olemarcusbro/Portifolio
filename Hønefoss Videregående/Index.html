@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <!-- Lenke til inkonene til Twitter,Faceook,instagram og linkedin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- lenke til bilde av iconet mitt -->
+    <link rel="icon" type="image/x-icon" href="Icon logo.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hønefoss Videregående Skole</title>
+    
+</head>
+
+<!-- Stylen er for og replace css file -->
+<Style>
+    
+    /* Plasering av content banner teskt og Størrelsen på hele nettsiden  */
+    body{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    /* plasering av Logoen og 1IMA 2ITA INFO KANTINE */
+    .Homeknapp{
+     width: 1170px;
+     margin: 0 auto;
+     padding: 14px 16px;
+    }
+    
+    /* Hele den sorte header */
+    header{
+    height:  6.25rem;
+    background-color: #24262b;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-top: 7px solid #3b3b3b
+    }
+   
+    /* Hønefoss logoen plasering, kan slå sammen med log.a  */
+    .logo{
+     width: 30;
+     float: left;
+     line-height: 6.25rem;
+    text-decoration: none;
+    font-size: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 0.313rem;
+    }
+    
+    /* Plassering av 1IMA 2ITA INFO og Kantine  */
+    nav{
+    float: right;
+    line-height: 6.25rem;
+    }
+    
+    /* 1ima 2ITA Info Kantine tekst størelse og font  */
+    nav a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 1.25rem;
+    margin: 0 0.6rem;
+    color: #fff;
+    }
+    
+    /* Banner bildet */
+    .banner-area{
+        width: 100%;
+        height: 31.25rem;
+        position: fixed;
+        top: 0.625rem;
+        background-image: url("vgs1.jpg");
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    /* Banner skrift */
+    .banner-area h2{
+        padding: 13%;
+        font-size: 4.375rem;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        text-shadow: 5px 5px 13px #000000;
+    }
+    
+    /* Hele Content tingen */
+    .content-area{
+        width: 100%;
+        position: relative;
+        top: 28.125rem;
+        background: #fff;
+        height: 93.75rem;
+    }
+    
+    /* Content Area */
+    .content-area h2{
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.25rem;
+        padding-top: 1.875rem;
+        font-size: 2.5rem;
+        margin: 0;
+   
+        /* Hei mitt Navn er Ole M */
+    }
+    .content-area p{
+        padding: 2%;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.875rem;
+    }
+    
+/* Dette er hele footeren blir denne fjernet vil ingenting fungere den styrer også line høyde og skrift type */
+footer{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Denne gjør slik at teksten inni footeren holder seg sentralt og i midten og at det er mindre lengde på de forskjellige skriftene */
+.container{
+	max-width: 73.125rem;
+	margin:auto;
+}
+
+/* Denne gjør sånn at teksten holder seg vannrett og ikke går loddrett nedover fjerner du denne detter teksten i footeren ned og blir loddrett */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Denne coden fjerner dottene som du får når du skriver ul i HTML */
+ul{
+	list-style: none;
+}
+
+/*Denne coden forandrer fargen på footer backgrunden*/
+.footer{
+	background-color: #24262b;
+    padding: 5rem 0;
+    position: relative;
+    border-bottom: 1.563rem solid #2d2f35;
+}
+
+/* Denne coden midtstiller både teksten og logoene  i footeren slik at de ikke på venstre side */
+.footer-col{
+   width: 25%;
+   padding: 15 2.188rem;
+}
+
+/* Fargen på teksten i footeren teksten (Bilder,rektor og ledelsen,kilder, følg oss) */
+.footer-col h4{
+	font-size: 1.25rem;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 2.188rem;
+	font-weight: 500;
+	position: relative;
+    text-align: center;
+}
+
+/* Denne koden her er for og forandre på linjen under teksten i footeren den som er blå og er under (Bilder,rektor og ledelsen,kilder, følg oss)  */
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:1;
+	bottom: -0.625rem;
+	background-color: #0000ff;
+	height: 0.125rem;
+	box-sizing: border-box;
+	width: 3.125rem;
+}
+
+/* Avstanden mellom alle under den store teksten i footer */
+.footer-col ul li:not(:last-child){
+	margin-bottom: 0.625rem;
+}
+
+
+/* Teskten under Company Get help */
+.footer-col ul li a{
+	font-size: 1rem;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+    margin-right: 3.125rem;
+}
+
+
+/* Fargen når du hover over de forskjellige tingene i footeren */
+.footer-col ul li a:hover{
+	color: #3939f9a3;
+	padding-left: 0.5rem;
+}
+
+
+/* Rundinger og formen til Sosial lenkene */
+.footer-col .social-links a{
+	display: inline-block;
+	height:  2.5rem;
+	width:  2.5rem;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 0.625rem 0.625rem 0;
+	text-align: center;
+	line-height: 2.5rem;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+
+/* Denne gjør at faregene bytter når man hover over sosial */
+.footer-col .social-links a:hover{
+	/* fargen til logoen i de sirklene */
+    color: #000000;
+    /* Fargen til sirkelen når du hover */
+	background-color: #0000ff;
+}
+
+
+</Style>
+
+<!-- body er for hele siden alt som ligger inni body vises på nettsiden -->
+<body>
+
+    <!-- jeg har laget mellomrom mellom header footer og main slik at dere ser koden på en oversiktlig måte. -->
+<header>
+
+    <!-- DIV=divisjon denne styrer hva som skjer inni diven så derfor linker jeg css koden til en div så vil den forandre diven som blir lenket til -->
+            <DIV class="Homeknapp">
+                <div class="logo">
+                <a href="Index.html"><img src="hnefoss-videregaende-skole-mork.svg" alt="" width="200vh"></a>
+                </div>
+
+    <!-- nav er den som styrer at man kan trykke på 1IMA 2ITA OG KANTINE siden de er lenket til en annen nettside -->
+                <nav>
+                    <a href="1IMA.HTML">1IMA</a>
+                    <a href="2ITA.HTML">2ITA</a>
+                    <a href="KANTINA.HTML">Kantine</a>
+                </nav>
+            </DIV>
+<!--slutt tag-->
+</header>
+
+
+<!-- Dette er main tingen som ligger i midten av nettsiden -->
+<Main>
+            <div class="banner-area">
+                <h2>Hønefoss Videregående Skole</h2>
+            </div>
+            <div class="content-area">
+                    <h2 style="font-family: 'Poppins', sans-serif;">Om Oss!</h2>
+                    <p style="font-family: 'Poppins', sans-serif;"><b>Hønefoss videregående skole</b> ligger i Ringerike kommune. Skolen har også ansvaret for undervisningen ved Ringerike fengsel. 
+                        Skolen har en rekke med linjer som du kan fordybe deg i foreksempel, elektro- og datateknologi <i>(datateknologi og elektronikk Vg2-3 med læringsevne og fordypning av naturfag)</i>, tekniske og industrielle fag, arkitektur og konstruksjonsfag, helse og barnefag <i>(generell læreplan og 4-årig konkurranse med læringsevne), Informasjonsteknologi og medieproduksjon, Restaurant- og matfag, Frisør, Blomster-, Interiør- og Eksponeringsdesign, Kunst, Design og Arkitektur (studieforberedelse), Medier og kommunikasjon (studieforberedelse), Språk Kombinerte kurs for minoriteter, studiespesialisering med dagliglivstrening, allmennfaglig påbygging (også for de som har fullført fagbrev)</i>, og skolen tilbyr mange tilbud for voksne gjennom Opus Ringerike.I tillegg har skolen også en nasjonal linje for yrkessjåfører. 
+                        5. januar 2015 flyttet skolen inn i et helt nytt skolebygg på samme sted som den gamle skolen i Oslovien bare ombygget.</p> 
+                         <p>Skolen kjøpte også utstyr til gymen til 1 million kroner da skolen var ny.<b>Hønefoss Videregående Skole</b> får også låne Aka Arena siden skolen ikke har en gymsal.</p>   
+                        <p> <b>Det er totalt 880 elever og 160 ansatte på Hønefoss Videregående Skole</b> </p>
+                    <!-- Br dytter teksten ned -->
+                    <br>
+                </div>
+            </div>    
+</Main>
+        
+<!-- Footer er det som ligger nederst -->
+<footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Bilder</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=goF5dV-X1-U">Video</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCofJxfBGd_EC9cDYQeDxV1g">Youtube kanal</a></li>
+                            <li><a href="https://viken.no/handlers/bv.ashx/i7e5b6682-d553-4c37-a738-1e87ad316be2/w1200/k82ae7f19796f/skolen_fly.jpg">Drone bilde</a></li>
+                            <li><a href="Planleggingstening.jpg">Før bygging</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Rektor og Ledelse</h4>
+                        <ul>
+                            <li><a href="https://viken.no/honefoss-vgs/om-skolen/organisasjon-og-ledelse/rektor-og-ledelse/">Rektor</a></li>
+                            <li><a href="https://viken.no/honefoss-vgs/om-skolen/organisasjon-og-ledelse/rektor-og-ledelse/">Utvilingsleder</a></li>
+                            <li><a href="https://viken.no/honefoss-vgs/om-skolen/organisasjon-og-ledelse/rektor-og-ledelse/">Administrasjonsleder</a></li>
+                            <li><a href="https://viken.no/honefoss-vgs/om-skolen/organisasjon-og-ledelse/rektor-og-ledelse/">Tilrettleggingsleder</a></li>
+                            <li><a href="https://viken.no/honefoss-vgs/om-skolen/organisasjon-og-ledelse/rektor-og-ledelse/">områdsledere</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Kilder</h4>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                            <!-- <li><a href="#">dress</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Følg oss</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/honefossvgs"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/OleMarcus2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ole_brovold/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/ole-marcus-brovold-abb810259/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+    </div>
+</body>
+</html>
+ 
