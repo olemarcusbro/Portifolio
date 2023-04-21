@@ -265,7 +265,7 @@ color: var(--main-color);
 }
 
 .skole-container .skole-box .HVS{
-    background-image:url("/Import/images/HVS.jpg");
+    background-image:url("/Portefolio-2023/Import/images/HVS.jpg");
     transition: .5s ease;
     flex: 1 1 0rem;
     padding: 40rem 2rem 4rem;
@@ -275,7 +275,7 @@ color: var(--main-color);
 }
 
 .skole-container .skole-box .Barnehage{
-    background-image:url("/Import/images/Barnehage.jpg");
+    background-image:url("/Portefolio-2023/Import/images/Barnehage.jpg");
     transition: .5s ease;
     flex: 1 1 30rem;
     padding: 17rem 2rem 4rem;
@@ -285,7 +285,7 @@ color: var(--main-color);
 }
 
 .skole-container .skole-box .Eikli{
-    background-image:url("/Import/images/Eikli\ Barneskole.jpg");
+    background-image:url("/Portefolio-2023/Import/images/Eikli\ Barneskole.jpg");
     transition: .5s ease;
     flex: 1 1 30rem;
     padding: 17rem 2rem 4rem;
@@ -295,7 +295,7 @@ color: var(--main-color);
 }
 
 .skole-container .skole-box .BBS{
-background-image:url("/Import/images/Brandbu\ barneskole.jpg");
+background-image:url("/Portefolio-2023/Import/images/Brandbu\ barneskole.jpg");
 transition: .5s ease;
 flex: 1 1 30rem;
 padding: 10rem 15rem 4rem;
@@ -305,7 +305,7 @@ background-size: cover;
 }
 
 .skole-container .skole-box .BUS{
-    background-image:url("/Import/images/BUS.jpg");
+    background-image:url("/Portefolio-2023/Import/images/BUS.jpg");
     transition: .5s ease;
     flex: 1 1 30rem;
     padding: 7rem 15rem 4rem;
