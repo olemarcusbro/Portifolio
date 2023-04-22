@@ -1,5 +1,7 @@
+/* Denne hentet jeg fra googlen dette er bare tekst font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* Hele nettsiden */
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +13,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Fargen på span */
 span {
     color: var(--main-color);
 }
+/* Fargene på hele nettsiden */
 :root {
     --bg-color:   #000000;
     --second-bg-color: #323946;
@@ -23,6 +27,7 @@ span {
     --bilde-color:#000000;
 }
 
+/* Denne endrer alt som handler om Html */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -45,11 +50,13 @@ body {
     color: var(--text-color);
 }
 
+/* Størrelse på Section */
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
+/* Header Css */
 .header {
     position: fixed;
     top: 0;
@@ -67,6 +74,7 @@ section {
     border-bottom: .1rem solid var(--main-color);
 }
 
+/* Logoen min altså OMB */
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -75,6 +83,7 @@ section {
     
 }
 
+/* Logoen min altså OMB */
 .logo:hover{
 color: var(--main-color);
 }
@@ -100,20 +109,21 @@ color: var(--main-color);
 }
 
 
-
-
+/* Denne er bare til bruk om nettsiden blir for liten eller til tlf bruk */
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
 
+/* Første du møter på nettsiden */
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Bilde justeringer */
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
@@ -136,6 +146,7 @@ color: var(--main-color);
     }
 }
 
+/* Fikser på H3 i hjemmesiden */
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
@@ -145,17 +156,17 @@ color: var(--main-color);
     margin-bottom: 2rem;
 }
 
-
+/* Start siden */
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
-
+/* Start siden */
 .home-content p {
     font-size: 1.6rem;
 }
-
+/* Start siden sosiale medier linkene */
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -170,15 +181,21 @@ color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
-
+/* Start siden sosiale medier linkene, når du hover */
 .social-media a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+/* Denne styrer overteksten på alt i nettsiden */
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
 
 
+/* Om meg delen av nettsiden */
 .about {
     display: flex;
     justify-content: center;
@@ -186,31 +203,30 @@ color: var(--main-color);
     gap: 2rem;
     background: var(--second-bg-color);
 }
-
+/* Om meg bildet av nettsiden */
 .about-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
+/* Om meg delen av nettsiden */
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
 }
 
+/* Om meg delen av nettsiden */
 .about-content h3 {
     font-size: 2.6rem;
 }
 
+/* Om meg delen av nettsiden */
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
+/* Ferdigheter delen av nettsiden */
 .skills {
     display: flex;
     justify-content: center;
@@ -218,35 +234,36 @@ color: var(--main-color);
     gap: 2rem;
     background: var(--second-bg-color);
 }
+
+/* Ferdighet bilde på nettsiden */
 .skills img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
+/* Justerer på H2 teksten */
 .skills-content h2 {
     text-align: left;
     line-height: 1.2;
 }
 
+/* Justerer på H3 teksten */
 .skills-content h3 {
     font-size: 2.6rem;
 }
-
+/* Justerer på P delen av teksten */
 .skills-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
 
+/* Justerer på H2 teksten */
 .skole h2 {
     margin-bottom: 5rem;
 }
 
+/* Holder bildene på plass slik at de ser bra ut */
 .skole-container {
     display: flex;
     justify-content: center;
@@ -255,6 +272,7 @@ color: var(--main-color);
     gap: 2rem;
 }
 
+/* Disse kan endre ting på alt som ligger i skole-box */
 .skole-container .skole-box  {
     flex: 1 1 30rem;
     padding: 3rem 2rem 4rem;
@@ -264,6 +282,7 @@ color: var(--main-color);
     transition: .5s ease;
 }
 
+/* Juserting av kun Hønefoss Videregående skole */
 .skole-container .skole-box .HVS{
     background-image:url("/Portefolio-2023/Import/images/HVS.jpg");
     transition: .5s ease;
@@ -274,6 +293,7 @@ color: var(--main-color);
     background-size: cover;
 }
 
+/* Juserting av kun Barnehage */
 .skole-container .skole-box .Barnehage{
     background-image:url("/Portefolio-2023/Import/images/Barnehage.jpg");
     transition: .5s ease;
@@ -284,6 +304,7 @@ color: var(--main-color);
     background-size: cover;
 }
 
+/* Juserting av kun Eikli skole */
 .skole-container .skole-box .Eikli{
     background-image:url("/Portefolio-2023/Import/images/Eikli\ Barneskole.jpg");
     transition: .5s ease;
@@ -294,6 +315,7 @@ color: var(--main-color);
     background-size: cover;
 }
 
+/* Juserting av kun Brandbu barneskole */
 .skole-container .skole-box .BBS{
 background-image:url("/Portefolio-2023/Import/images/Brandbu\ barneskole.jpg");
 transition: .5s ease;
@@ -304,6 +326,7 @@ text-align: center;
 background-size: cover;
 }
 
+/* Juserting av kun Brandbu Ungdomskole */
 .skole-container .skole-box .BUS{
     background-image:url("/Portefolio-2023/Import/images/BUS.jpg");
     transition: .5s ease;
@@ -314,26 +337,31 @@ background-size: cover;
     background-size: cover;
 }
 
-
+/* Den grønne streken som kommer når man hover over alle bildene  */
 .skole-container .skole-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
 
+/* Info du ser i alle bildene */
 .skole-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
 
+/* overteksten du ser i alle bildene */
 .skole-box h3 {
     font-size: 2.6rem;
 }
-
+/* P teksten du ser i alle bildene */
 .skole-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
 
+
+
+/* Gaming delen av nettsiden */
 .gaming {
     display: flex;
     justify-content: center;
@@ -342,39 +370,41 @@ background-size: cover;
     background: var(--second-bg-color);
 }
 
+/* Gaming bilde i nettsiden */
 .gaming-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
+/* justering av H2 Gaming delen av nettsiden */
 .gaming-content h2 {
     text-align: left;
     line-height: 1.2;
 }
 
+/* justering av H3 Gaming delen av nettsiden */
 .gaming-content h3 {
     font-size: 2.6rem;
 }
 
+/* justering av P Gaming delen av nettsiden */
 .gaming-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
 
 
+/* Prjoceter delen av nettsiden */
 .portfolio {
     background: var(--second-bg-color);
 }
 
+/* justering av H2 Prjocet delen av nettsiden */
 .portfolio h2 {
     margin-bottom: 4rem;
 }
 
+/* Denne gjør sånn at bildene kan stå vedsiden av hverandre */
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -382,6 +412,7 @@ background-size: cover;
     gap: 2.5rem;
 }
 
+/* Denne kan Justere den pop upen som kommer når du hover på bildet  */
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
@@ -390,15 +421,18 @@ background-size: cover;
     display: flex;
 }
 
+/* Denne justere bilde størrelsen på alle bildene */
 .portfolio-box img {
     width: 100%;
     transition: .5s ease;
 }
 
+/* Denne endrer på størrelsen på bildet når man hoverer over  */
 .portfolio-box:hover img {
     transform: scale(1.1);
 }
 
+/* Endrer på bildene og at de holder seg sammen */
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -416,14 +450,16 @@ background-size: cover;
     transition: .5s ease;
 }
 
+/* Dette er hele pop uppen */
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
 }
-
+/* Hovedteksten i pop uppen */
 .portfolio-layer h4 {
     font-size: 3rem;
 }
 
+/* Infoen under i pop uppen */
 .portfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
@@ -444,12 +480,13 @@ background-size: cover;
     color: var(--second-bg-color);
 }
 
+/* Denne er for kontakt header 2 */
 .contact h2 {
     margin-bottom: 3rem;
 }
 
 
-
+/* Denne er for kontakt */
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
@@ -527,8 +564,61 @@ background-size: cover;
 }
 
 
+/* Den nedre delen av Footer coden under den grønne streken */
+.footer-bottom{
+    margin: 3rem;
+    border-top: .1rem solid var(--main-color);
+    background: #00cc9900;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    color: var(--main-color);
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 
-/* BREAKPOINTS */
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    left: 10rem;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: #00cc99;
+}
+
+
+::marker{
+    color: var(--main-color);
+}
+ul li{
+    padding-left: 1rem;
+    font-size: 2rem; 
+}
+
+
+/* BREAKPOINTS | Knekkepunkter */
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -685,58 +775,3 @@ background-size: cover;
         margin-top: 2rem;
     }
 }
-
-
-/* Footer delen av coden */
-.footer-bottom{
-    margin: 10rem;
-    border-top: .1rem solid var(--main-color);
-    background: #00cc9900;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
-}
-.footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom span{
-    color: var(--main-color);
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
-}
-
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    left: 10rem;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-}
-.socials a i{
-    font-size: 2rem;
-    transition: color .4s ease;
-
-}
-.socials a:hover i{
-    color: #00cc99;
-}
-
-
-::marker{
-    color: var(--main-color);
-}
-ul li{
-    padding-left: 1rem;
-    font-size: 2rem; 
-}
-

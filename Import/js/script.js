@@ -31,7 +31,7 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
+    /*==================== fjern veksleikonet og navigasjonslinjen når du klikker på navigasjonslinjen (rull) mest ment for tlf bruk ====================*/
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
@@ -51,9 +51,10 @@ ScrollReveal().reveal('.home-content h1,.about-img .gaming-img, ', { origin: 'le
 ScrollReveal().reveal('.home-content p, .about-content .gaming-content', { origin: 'right' });
 
 
-/*==================== typed js | Teksten som bytter seg ====================*/
+
+/*==================== typed js | Teksten som bytter seg i hovednettsiden ====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Elev', 'Progammerer', 'Snill'],
+    strings: ['Elev', 'Designer', 'Utvikler'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
